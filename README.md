@@ -35,16 +35,32 @@ npm run build
 npm start
 ```
 
+Το προεπιλεγμένο build είναι πλέον το κανονικό `next build` και δημιουργεί τον
+φάκελο `.next` που περιμένει το Vercel. Για το ειδικό Sites/Cloudflare build
+χρησιμοποίησε `npm run build:sites`.
+
 ## MVP δυνατότητες
 
-- Visual circuit builder τριών qubits
-- Πύλες H, X, Y, Z, S και T
-- State-vector simulation στον browser
-- Δυναμικό Bloch vector ανά qubit
-- Measurement simulation με 100–4096 shots
-- Παραδείγματα Grover, superposition και phase kickback
-- Παραγωγή ισοδύναμου Qiskit, Cirq και Q# κώδικα
+- Visual circuit builder 1–5 qubits
+- Πύλες H, X, Y, Z, S, T, RX, RY, RZ, CNOT, CZ, SWAP και Toffoli
+- State-vector simulation στον browser και step-through εκτέλεση
+- Περιστρεφόμενη 3D Bloch sphere και reduced-state purity ανά qubit
+- Measurement simulation με 100–10.000 shots
+- Bell, GHZ, Grover, Toffoli και quantum teleportation experiments
+- Αμφίδρομη μετατροπή circuit ↔ Qiskit/Cirq/Q# για τις υποστηριζόμενες εντολές
+- Download runnable source code
 - Responsive UI χωρίς βάση δεδομένων ή API keys
+
+## Χρήση του workbench
+
+1. Διάλεξε 1–5 qubits από το επάνω μέρος.
+2. Επίλεξε πύλη από το Gate Library, όρισε target/control qubits και πάτησε **Add gate**.
+3. Πάτησε ένα `q0`, `q1`, κ.λπ. και σύρε τη Bloch sphere για να εξετάσεις την κατάσταση.
+4. Χρησιμοποίησε **Step through** για να παρακολουθήσεις την εξέλιξη του state vector.
+5. Στο Code Lab άλλαξε framework ή επεξεργάσου τον κώδικα και πάτησε **Apply code → circuit**.
+6. Πάτησε **Download** για το `.py` ή `.qs` αρχείο.
+7. Διάλεξε shots και πάτησε **Simulate & measure** για histogram μετρήσεων.
+8. Από το Experiment Library φόρτωσε έτοιμο Bell, GHZ, Grover, Toffoli ή teleportation circuit.
 
 ## Επόμενο production στάδιο
 
