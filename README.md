@@ -1,8 +1,8 @@
 # Quantoom
 
-Το Quantoom είναι ένα δίγλωσσο, διαδραστικό εργαστήριο κβαντικής υπολογιστικής για εκπαίδευση, έρευνα και τεχνική διερεύνηση. Επιτρέπει οπτική σύνθεση κυκλωμάτων, βηματική εκτέλεση, επιθεώρηση στη σφαίρα Bloch, προσομοίωση statevector, μετρήσεις και αμφίδρομη εργασία με Qiskit, Cirq και Q#.
+Το Quantoom είναι ένα διαδραστικό εργαστήριο κβαντικής υπολογιστικής για εκπαίδευση, έρευνα και τεχνική διερεύνηση. Επιτρέπει οπτική σύνθεση κυκλωμάτων, βηματική εκτέλεση, επιθεώρηση στη σφαίρα Bloch, προσομοίωση statevector, μετρήσεις και αμφίδρομη εργασία με Qiskit, Cirq και Q#.
 
-Quantoom is a bilingual interactive quantum-computing workbench for education, research, and technical exploration. It combines visual circuit composition, step-by-step playback, Bloch-sphere inspection, statevector simulation, measurement, and round-trip Qiskit, Cirq, and Q# workflows.
+Quantoom is an interactive quantum-computing workbench for education, research, and technical exploration. It combines visual circuit composition, step-by-step playback, Bloch-sphere inspection, statevector simulation, measurement, and round-trip Qiskit, Cirq, and Q# workflows.
 
 ## Ελληνικά
 
@@ -17,7 +17,6 @@ Quantoom is a bilingual interactive quantum-computing workbench for education, r
 - Statevector, ακριβείς πιθανότητες και histogram μετρήσεων πολλαπλών shots.
 - Αυτόματη παραγωγή κώδικα Qiskit, Cirq και Q#, λήψη αρχείου και υποστηριζόμενη αντίστροφη εισαγωγή κώδικα στο κύκλωμα.
 - Έτοιμα πειράματα Bell, GHZ, Grover, Toffoli, Quantum Teleportation και Shor για N=15, a=2.
-- Ελληνικό και αγγλικό περιβάλλον χωρίς μετάφραση καθιερωμένων τεχνικών όρων όταν αυτή θα δημιουργούσε ασάφεια.
 
 ### Γιατί υπάρχουν δύο όρια qubits
 
@@ -45,16 +44,15 @@ npm start
 
 ### Πλήρης οδηγός χρήσης
 
-1. **Γλώσσα:** Από το επάνω δεξί menu επίλεξε `Ελληνικά` ή `English`.
-2. **Μέγεθος register:** Γράψε αριθμό 1–1.200. Έως 16 qubits εμφανίζεται `Ακριβής προσομοίωση`. Πάνω από 16 εμφανίζεται `Λειτουργία σχεδίασης`.
-3. **Προσθήκη πύλης:** Επίλεξε πύλη από τη βιβλιοθήκη, δήλωσε αριθμούς target/control qubits και, για RX/RY/RZ/CP, διάλεξε γωνία. Πάτησε `Προσθήκη πύλης`.
-4. **Μεγάλα registers:** Το κύκλωμα εμφανίζει παράθυρο 20 wires. Χρησιμοποίησε τα `← q` και `q →` για τις επόμενες ομάδες qubits.
-5. **Αναπαραγωγή:** Πάτησε ▶ για αυτόματη βηματική εκτέλεση. Ρύθμισε 0.5×, 1×, 2× ή 4×, μετακίνησε το timeline ή χρησιμοποίησε προηγούμενο/επόμενο βήμα.
-6. **Επιθεώρηση qubit:** Πάτησε το όνομα ενός wire ή ένα tab `qN`. Η σφαίρα Bloch δείχνει τη μειωμένη κατάσταση αυτού του qubit. Σύρε τη σφαίρα για περιστροφή.
-7. **Μετρήσεις:** Τα meter symbols στο τέλος των wires δηλώνουν μέτρηση στην υπολογιστική βάση. Διάλεξε shots και πάτησε `Προσομοίωση και μέτρηση`.
-8. **Κώδικας:** Επίλεξε Qiskit, Cirq ή Q#. Ο κώδικας ενημερώνεται αυτόματα με το κύκλωμα. Μπορείς να επεξεργαστείς υποστηριζόμενες εντολές και να πατήσεις `Εφαρμογή κώδικα → κύκλωμα`.
-9. **Λήψη:** Πάτησε `Λήψη` για αρχείο `.py` ή `.qs`, έτοιμο να προσαρμοστεί στο αντίστοιχο SDK.
-10. **Διαγραφή πύλης:** Πάτησε πάνω στο σύμβολο μιας πύλης στο κύκλωμα.
+1. **Μέγεθος register:** Γράψε αριθμό 1–1.200. Έως 16 qubits εμφανίζεται `Ακριβής προσομοίωση`. Πάνω από 16 εμφανίζεται `Λειτουργία σχεδίασης`.
+2. **Προσθήκη πύλης:** Επίλεξε πύλη από τη βιβλιοθήκη, δήλωσε αριθμούς target/control qubits και, για RX/RY/RZ/CP, διάλεξε γωνία. Πάτησε `Προσθήκη πύλης`.
+3. **Μεγάλα registers:** Το κύκλωμα εμφανίζει παράθυρο 20 wires. Χρησιμοποίησε τα `← q` και `q →` για τις επόμενες ομάδες qubits.
+4. **Αναπαραγωγή:** Πάτησε ▶ για αυτόματη βηματική εκτέλεση. Ρύθμισε 0.5×, 1×, 2× ή 4×, μετακίνησε το timeline ή χρησιμοποίησε προηγούμενο/επόμενο βήμα.
+5. **Επιθεώρηση qubit:** Πάτησε το όνομα ενός wire ή ένα tab `qN`. Η σφαίρα Bloch δείχνει τη μειωμένη κατάσταση αυτού του qubit. Σύρε τη σφαίρα για περιστροφή.
+6. **Μετρήσεις:** Τα meter symbols στο τέλος των wires δηλώνουν μέτρηση στην υπολογιστική βάση. Διάλεξε shots και πάτησε `Προσομοίωση και μέτρηση`.
+7. **Κώδικας:** Επίλεξε Qiskit, Cirq ή Q#. Ο κώδικας ενημερώνεται αυτόματα με το κύκλωμα. Μπορείς να επεξεργαστείς υποστηριζόμενες εντολές και να πατήσεις `Εφαρμογή κώδικα → κύκλωμα`.
+8. **Λήψη:** Πάτησε `Λήψη` για αρχείο `.py` ή `.qs`, έτοιμο να προσαρμοστεί στο αντίστοιχο SDK.
+9. **Διαγραφή πύλης:** Πάτησε πάνω στο σύμβολο μιας πύλης στο κύκλωμα.
 
 ### Προτεινόμενα πειράματα
 
@@ -95,16 +93,6 @@ pip install qiskit qiskit-aer
 python quantoom-circuit.py
 ```
 
-### Deploy στο Vercel
-
-- Framework preset: `Next.js`
-- Build command: `npm run build`
-- Output directory: άφησέ το κενό — το Vercel εντοπίζει αυτόματα το `.next`
-- Install command: `npm install`
-- Node.js: 22.x
-
-Κάθε εγκεκριμένο push στο `main` ενεργοποιεί νέο production deployment.
-
 ## English
 
 ### Features
@@ -118,7 +106,6 @@ python quantoom-circuit.py
 - Statevector probabilities and sampled measurement histograms.
 - Synchronized Qiskit, Cirq, and Q# generation, source download, and supported code-to-circuit import.
 - Bell, GHZ, Grover, Toffoli, Quantum Teleportation, and compiled Shor N=15 experiments.
-- Greek and English UI.
 
 ### Register and simulation limits
 
@@ -144,16 +131,15 @@ npm start
 
 ### How to use Quantoom
 
-1. Select Greek or English from the top-right language menu.
-2. Enter a register size between 1 and 1,200.
-3. Select a gate, assign target/control indices, choose an angle where applicable, and add it.
-4. For large registers, navigate the circuit in 20-qubit windows.
-5. Use Play or the timeline to inspect state evolution operation by operation.
-6. Select a wire to inspect its reduced state on the Bloch sphere.
-7. Choose a shot count and run measurement simulation for registers up to 16 qubits.
-8. Switch between Qiskit, Cirq, and Q#. Edit supported calls and apply them back to the visual circuit.
-9. Download the generated `.py` or `.qs` source.
-10. Click a visual gate to remove it.
+1. Enter a register size between 1 and 1,200.
+2. Select a gate, assign target/control indices, choose an angle where applicable, and add it.
+3. For large registers, navigate the circuit in 20-qubit windows.
+4. Use Play or the timeline to inspect state evolution operation by operation.
+5. Select a wire to inspect its reduced state on the Bloch sphere.
+6. Choose a shot count and run measurement simulation for registers up to 16 qubits.
+7. Switch between Qiskit, Cirq, and Q#. Edit supported calls and apply them back to the visual circuit.
+8. Download the generated `.py` or `.qs` source.
+9. Click a visual gate to remove it.
 
 ### Experiment checklist
 
@@ -173,10 +159,6 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install qiskit qiskit-aer
 python quantoom-circuit.py
 ```
-
-### Vercel
-
-Use the Next.js preset, `npm run build`, `npm install`, and Node.js 22.x. Leave Output Directory empty so Vercel uses `.next` automatically.
 
 ## Development and production safety
 
